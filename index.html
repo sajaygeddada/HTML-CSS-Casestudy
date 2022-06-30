@@ -1,0 +1,64 @@
+<!--
+    #Case study
+    IIPRSS1702
+    Balasajay Geddada
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Study</title>
+    <style>
+        .skill {
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+<body>
+    <form>
+        <table>
+            <tr>
+                <td>Name :</td>
+                <td><input type="text" class="textinp"></td>
+            </tr>
+            <tr>
+                <td>Address :</td>
+                <td><textarea rows="2" cols="30" style="color: blue;"> Enter your address here</textarea></td>
+            </tr>
+            <tr>
+                <td>Skills :</td>
+                <td class="skill">
+                    <input type="checkbox">Angular
+                    <input type="checkbox">React
+                    <input type="checkbox">Vue
+                </td>
+            </tr>
+            <tr>
+                <td>Gender :</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label><br>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                </td>
+            </tr>
+        </table>
+       
+        <input type="submit" value="Submit" onclick="myFunction()" style="margin-left: 10px; margin-top: 10px;">
+    </form>
+    <span style="color: green;"><p id="submitted" ></p></span>
+    <script>
+        function myFunction() {
+            alert("You want to submit the form?");
+            var x = "Form Submitted"
+            document.getElementById("submitted").innerHTML = x;
+        }
+        
+    </script>
+</body>
+</html>
